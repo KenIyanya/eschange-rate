@@ -1,0 +1,40 @@
+table, 
+thead, 
+tbody, 
+th, 
+tr, 
+td {
+  border: 1px solid brown;
+  border-collapse: collapse;
+  background-color: rgb(250, 239, 239);
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+h2,
+h3{
+  text-align: center;
+  color: rgb(47, 15, 56);
+}
+body{
+  width: auto;
+  background-color: rgb(241, 237, 237);
+  text-align: center;
+}
+th{
+  background-color: brown;
+  color: white;
+ 
+}
+.td1{background-color: rgb(240, 229, 229);
+color: rgb(32, 94, 68);
+}
+.td1:hover{
+  color: brown;
+  background-color: rgb(238, 211, 211);
+}
+.tr1:hover{
+  background-color: rgb(211, 207, 219);
+  color:brown;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>foreighn-exchame rate info</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+</head>
+<body>
+  <div id="app">
+    
+    <h2>Foreign Exchange Rate as at <strong>{{date}}</strong></h2>
+    <h3>Base Currency: <strong>{{baseCurrency}}</strong></h3>
+    <div class="wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr v-for= "(rate, name) in currency" class="tr1">
+            
+            <td class="td1">{{name}}</td>
+            <td>{{rate}}</td>
+          </tr>
+    
+        </tbody>
+      </table>
+  
+    </div>
+  </div>
+  
+
+  
+  <script src="./script.js"></script>
+</body>
+</html>
